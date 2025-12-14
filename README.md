@@ -1,156 +1,73 @@
-🍬 Sweet Shop Management System
-A full-stack Sweet Shop Management System built using the MERN stack as part of the Incubyte TDD Kata assessment.
-The project demonstrates RESTful API design, database persistence, authentication, role-based authorization, frontend integration, and Test-Driven Development (TDD).
+# Welcome to your Lovable project
 
-📌 Project Objective
-The objective of this project is to design, build, and test a production-ready application that manages sweet inventory for a shop.
-It allows users to browse and purchase sweets, while admin users securely manage inventory operations.
-This project strictly follows:
-•	MERN stack architecture
-•	Persistent database usage (no in-memory database)
-•	JWT-based authentication
-•	TDD (Red → Green → Refactor)
-•	Clean coding practices
-•	Transparent AI usage
+## Project info
 
-🧩 Tech Stack
-Backend
-•	Node.js
-•	Express.js
-•	TypeScript
-•	MongoDB + Mongoose
-•	JWT Authentication
-•	bcrypt (password hashing)
-•	Jest + Supertest (testing)
-Frontend
-•	React
-•	TypeScript
-•	React Router
-•	Axios
-•	Responsive UI (CSS / Tailwind)
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-🔐 User Roles
-Role	Capabilities
-User	View sweets, search/filter, purchase sweets
-Admin	Add, update, delete, and restock sweets
+## How can I edit this code?
 
-🚀 Features
-Authentication
-•	User registration
-•	User login
-•	JWT-based authentication
-•	Role-based authorization
-Sweets & Inventory
-•	View all sweets
-•	Search sweets by name, category, and price range
-•	Purchase sweets (quantity decreases automatically)
-•	Purchase disabled when quantity is zero
-Admin Functionality
-•	Add new sweets
-•	Update sweet details
-•	Delete sweets
-•	Restock inventory
-UI / UX
-•	Clean and responsive design
-•	Protected routes
-•	Clear success and error messages
-•	Mobile-friendly layout
+There are several ways of editing your application.
 
-🔗 API Endpoints
-Auth
-POST /api/auth/register
-POST /api/auth/login
-Sweets (Protected)
-POST   /api/sweets            (Admin only)
-GET    /api/sweets
-GET    /api/sweets/search
-PUT    /api/sweets/:id        (Admin only)
-DELETE /api/sweets/:id        (Admin only)
-Inventory (Protected)
-POST /api/sweets/:id/purchase
-POST /api/sweets/:id/restock  (Admin only)
+**Use Lovable**
 
-🧪 Test-Driven Development (TDD)
-The backend is developed using strict TDD methodology:
-1.	Write failing tests (Red)
-2.	Implement minimal logic (Green)
-3.	Refactor for clean and maintainable code (Refactor)
-Test Coverage Includes:
-•	Authentication and authorization
-•	Role-based access control
-•	Sweet CRUD operations
-•	Purchase and restock logic
-•	Edge cases (zero quantity, unauthorized access, invalid IDs)
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-📁 Project Structure
-sweet-shop/
-│
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── routes/
-│   │   ├── models/
-│   │   ├── services/
-│   │   ├── middleware/
-│   │   └── tests/
-│   ├── app.ts
-│   └── server.ts
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   └── utils/
-│   ├── App.tsx
-│   └── index.tsx
+Changes made via Lovable will be committed automatically to this repo.
 
-⚙️ Setup Instructions
-Backend Setup
-cd backend
-npm install
-npm run test
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
-Create a .env file:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+```
 
-Frontend Setup
-cd frontend
-npm install
-npm start
+**Edit a file directly in GitHub**
 
-📊 Test Report
-•	All backend tests pass successfully
-•	Jest and Supertest used for API testing
-•	Test cases cover both positive and negative scenarios
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-🤖 My AI Usage
-AI Tools Used
-•	VS Code AI Extension (Kilo)
-•	ChatGPT
-How AI Was Used
-•	Generating initial boilerplate code
-•	Assisting with test case structure
-•	Architectural guidance and refactoring suggestions
-Reflection
-AI tools significantly improved development speed and code structure.
-All AI-generated output was carefully reviewed, understood, and manually refined to ensure originality, correctness, and compliance with the assignment requirements.
-AI was used as an assistant, not as a replacement for learning or decision-making.
+**Use GitHub Codespaces**
 
-📌 Notes for Interview
-•	Persistent storage implemented using MongoDB
-•	Authentication handled via JWT
-•	Authorization enforced using role-based middleware
-•	Backend developed using TDD principles
-•	Frontend cleanly consumes REST APIs
-•	AI usage is transparent and documented
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-🌐 Deployment (Optional)
-Deployment link will be added if deployed on platforms like Vercel, Netlify, or AWS.
+## What technologies are used for this project?
 
-✅ Conclusion
-This project demonstrates a real-world approach to full-stack development, combining backend robustness, frontend usability, testing discipline, and responsible AI usage, fully aligned with Incubyte’s TDD Kata requirements.
+This project is built with:
 
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
